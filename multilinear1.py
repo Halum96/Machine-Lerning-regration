@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Wed Feb 28 17:52:22 2018
 
@@ -10,7 +8,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset = pd.read_csv('50_Startups.csv')
+dataset = pd.read_csv('Your.csv')
+#enter your csv file
 x = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 4].values
 
@@ -25,10 +24,7 @@ x = x[:, 1:]
 from sklearn.cross_validation import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
 
-"""from sklearn.preprocessing import StandardScaler
-sc_x = StandardScaler()
-x_train = sc_x.fit_transform(x_train)
-x_test = sc_x.transform(x_test)"""
+
 
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
