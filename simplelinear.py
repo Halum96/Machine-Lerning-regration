@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 """
 Created on Wed Feb 28 13:17:43 2018
 
@@ -10,6 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 dataset = pd.read_csv('Salary_Data.csv')
+#Enter your csv file name.
 x = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 1].values
 
