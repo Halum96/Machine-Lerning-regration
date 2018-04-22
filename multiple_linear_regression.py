@@ -1,4 +1,5 @@
 # Multiple Linear Regression
+#author Arjit Bag
 
 # Importing the libraries
 import numpy as np
