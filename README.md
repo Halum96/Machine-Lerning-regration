@@ -1,1 +1,1 @@
-# Machine-Lerning-regration
+# Machine-Lerning-regression
